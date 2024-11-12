@@ -26,14 +26,6 @@ jobs:
       with:
         go-version: 1.22
 
-    - name: Cache Go modules
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/go-build
-        key: ${{ runner.os }}-go-${{ hashFiles('go-web-app/go.mod', 'go-web-app/go.sum') }}
-        restore-keys: |
-          ${{ runner.os }}-go-
-
     - name: Build
       run: go build -o go-web-app
 
