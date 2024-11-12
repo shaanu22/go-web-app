@@ -79,7 +79,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GO-WEB-APP }}
+        token: ${{ secrets.TOKEN_FOR_GH }}
 
     - name: Update tag in Helm chart
       run: |
