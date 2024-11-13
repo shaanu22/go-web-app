@@ -1,3 +1,3 @@
-module go-web-app
+module github.com/iam-veeramalla/go-web-app-devops
 
-go 1.23.2
+go 1.21.10
